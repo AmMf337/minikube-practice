@@ -20,6 +20,7 @@ kubectl create deployment nginx --image=nginx --replicas=2
 ```
 <img width="1050" height="51" alt="Pasted image 20251001165301" src="https://github.com/user-attachments/assets/c0c0decb-8e8c-4f31-9d6d-b889f56a4574" />
 -  **--image:** Specified the image running in the container.
+  
 - **--replicas:** Specified the number of containers running the image inside the pod. 
 It will create a pod and containers with the specified image, in this case nginx:
 
@@ -33,7 +34,9 @@ This type of service allows connectivity only between pods:
  kubectl expose deployment nginx --type=ClusterIP --port=80 --target-port=80
  ``` 
  - **--type:** Define the kind of service.
+   
  - **--port:** The port use for communication between containers.
+   
  - **--target-port:** The port the application runs.
  
 To ensure that our service is running, it is necessary to access said service but the connectivity only works inside the cluster, to bypass that we will use port forwarding to expose the service in the localhost of the host :
