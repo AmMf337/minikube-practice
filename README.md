@@ -19,7 +19,7 @@ Now is necessary to create the containers of  that will run the service, with th
 kubectl create deployment nginx --image=nginx --replicas=2
 ```
 <img width="1050" height="51" alt="Pasted image 20251001165301" src="https://github.com/user-attachments/assets/c0c0decb-8e8c-4f31-9d6d-b889f56a4574" />
--  **--image:** Specified the image running in the container.
+- **--image:** Specified the image running in the container.
   
 - **--replicas:** Specified the number of containers running the image inside the pod. 
 It will create a pod and containers with the specified image, in this case nginx:
